@@ -11,11 +11,10 @@ import mysql.connector
 
 # Conexión a MySQL con contraseña
 data_Base = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="Casino1980",  # Usa la misma contraseña que en settings.py
+    host=config("DB_HOST"),
+    user=config("DB_USER"),
+    passwd=config("DB_PASSWORD"),
 )
-
 # Preparar cursor
 cursorObject = data_Base.cursor()
 
