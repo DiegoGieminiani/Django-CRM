@@ -1,5 +1,4 @@
 # Ignorar archivos sensibles
-
 .env
 
 # Ignorar entorno virtual
